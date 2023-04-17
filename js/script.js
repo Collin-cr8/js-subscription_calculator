@@ -8,3 +8,12 @@ var subType = "basic";
 var subDuration = 1;
 
 //Create Change Event Listeners
+subTypeElement.addEventListener("change", function(e) {
+    subType = e.target.value;
+    console.log(subType);
+});
+
+subDurationElement.addEventListener("change", function(e) {
+    subDuration = Number(e.target.value);
+    console.log(subDuration);
+});
